@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".encryptActivity">
+
+    <EditText
+        android:id="@+id/et_encrypt_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="71dp"
+        android:ems="10"
+        android:hint="enter the message"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btn_to_encrypt"
+        app:layout_constraintEnd_toStartOf="@+id/et_key_input_e"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
+
+    <TextView
+        android:id="@+id/tv_encrypted"
+        android:layout_width="175dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="118dp"
+        android:gravity="center"
+        android:textIsSelectable="true"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_to_encrypt" />
+
+    <Button
+        android:id="@+id/btn_to_encrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="159dp"
+        android:text="encrypt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_encrypt_input" />
+
+    <EditText
+        android:id="@+id/et_key_input_e"
+        android:layout_width="69dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:hint="key"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_encrypt_input"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

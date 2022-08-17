@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".decryptActivity">
+
+    <EditText
+        android:id="@+id/et_decrypt_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="100dp"
+        android:ems="10"
+        android:hint="enter cipher text"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btn_to_decrypt"
+        app:layout_constraintEnd_toStartOf="@+id/et_key_input_d"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
+
+    <EditText
+        android:id="@+id/et_key_input_d"
+        android:layout_width="60dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="65dp"
+        android:ems="10"
+        android:hint="key"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_decrypt_input"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_to_decrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="165dp"
+        android:text="decrypt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_decrypt_input" />
+
+    <TextView
+        android:id="@+id/tv_decrypted"
+        android:layout_width="183dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="114dp"
+        android:gravity="center"
+        android:textIsSelectable="true"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_to_decrypt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
