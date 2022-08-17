@@ -24,6 +24,7 @@ Decryption is performed similarly,
 
 
 Example :-
+
 Plaintext:  THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
 
 Ciphertext: QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD
