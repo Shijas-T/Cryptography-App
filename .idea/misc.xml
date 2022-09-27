@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/tmoha/AndroidStudioProjects/Enigma/app/src/main/res/layout/activity_about.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tmoha/AndroidStudioProjects/Enigma/app/src/main/res/layout/activity_decrypt.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tmoha/AndroidStudioProjects/Enigma/app/src/main/res/layout/activity_encrypt.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tmoha/AndroidStudioProjects/Enigma/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/tmoha/AndroidStudioProjects/Enigma/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
       </map>
     </option>

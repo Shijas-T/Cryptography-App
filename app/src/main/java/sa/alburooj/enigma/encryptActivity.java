@@ -19,11 +19,8 @@ public class encryptActivity extends AppCompatActivity {
     String message,e_message;
     int key;
 
-
     //Instance of Class
     cryptography encrypt =new cryptography();
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,17 +54,10 @@ public class encryptActivity extends AppCompatActivity {
                 message = et_encrypt_input.getText().toString();
                 key = Integer.parseInt(et_key_input.getText().toString());
 
-
                  e_message = encrypt.encrypt(message,key);
 
                  tv_encrypted.setText(e_message);
-
-
-
-
-
             }
         });
-
     }
 }

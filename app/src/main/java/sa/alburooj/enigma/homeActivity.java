@@ -19,14 +19,8 @@ public class homeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-
         on_menu();//What's on Menu
         on_click();//Their on Click Func.
-
-
-
-
-
     }
 
     private void on_click() {
@@ -36,37 +30,27 @@ public class homeActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(homeActivity.this, encryptActivity.class);
-
                 startActivity(intent);
-
             }
         });
-
 
         btn_decrypt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent intent = new Intent(homeActivity.this, decryptActivity.class);
-
                 startActivity(intent);
-
             }
         });
-
 
         img_about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent intent = new Intent(homeActivity.this, aboutActivity.class);
-
                 startActivity(intent);
-
             }
         });
-
-
     }
 
     private void on_menu() {
@@ -75,5 +59,4 @@ public class homeActivity extends AppCompatActivity {
         btn_decrypt = findViewById(R.id.btn_decryption);
         img_about = findViewById(R.id.img_about);
     }
-
 }

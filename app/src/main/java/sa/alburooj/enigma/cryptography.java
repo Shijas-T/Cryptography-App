@@ -3,18 +3,9 @@ import java.util.*;
 
 
 public class cryptography {
-
-
-
-
     //to keep track of index
     public static final String alpha = "abcdefghijklmnopqrstuvwxyz";
-
     public static final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
-
-
-
-
 
     //Encryption
     public  String encrypt(String message, int shiftKey) {
@@ -44,14 +35,4 @@ public class cryptography {
         }
         return message;
     }
-
-
-
-
-
-
-
-
-
-
 }
